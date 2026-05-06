@@ -6,13 +6,13 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 17:44:24 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/29 19:58:31 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/06 16:54:14 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	search(char s1_i, char const *set)
+static int	search(char s1_i, char const *set)
 {
 	int	i;
 

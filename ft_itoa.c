@@ -6,13 +6,13 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 16:14:58 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/05 18:56:25 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/06 16:52:22 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	n_len(long long_n)
+static int	n_len(long long_n)
 {
 	int	i;
 
@@ -33,33 +33,25 @@ int	n_len(long long_n)
 char	*ft_itoa(int n)
 {
 	long	long_n;
-	int		i;
-	int		minus;
-	char	*char_n;
+	int		len;
+	char	*str;
 
-	minus = 0;
-	long_n = (long)n;
+	long_n = n;
 	if (long_n < 0)
-	{
-		minus = 1;
 		long_n = long_n * -1;
-	}
-	i = n_len(long_n);
-	char_n = malloc(sizeof(char) * (i + 1 + minus));
-	if (!char_n)
+	len = n_len(long_n);
+	str = malloc(len + 1 + (n < 0));
+	if (!str)
 		return (NULL);
-	if (long_n == 0)
-		char_n[0] = '0';
-	if (minus)
-		char_n[0] = '-';
-	char_n[i + minus] = '\0';
-	while (long_n != 0)
+	str[len + (n < 0)] = '\0';
+	while (len--)
 	{
-		char_n[i - 1 + minus] = long_n % 10 + '0';
-		long_n = long_n / 10;
-		i--;
+		str[len + (n < 0)] = (long_n % 10) + '0';
+		long_n /= 10;
 	}
-	return (char_n);
+	if (n < 0)
+		str[0] = '-';
+	return (str);
 }
 
 #include <stdio.h>

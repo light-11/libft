@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 10:43:50 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 16:55:06 by ayanaga          ###   ########.fr       */
+/*   Created: 2026/05/06 13:03:18 by ayanaga           #+#    #+#             */
+/*   Updated: 2026/05/06 13:07:54 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include <unistd.h>
+
+void	ft_putchar_fd(char c, int fd)
 {
-	if ('a' <= c && c <= 'z')
-		return (c - 32);
-	else
-		return (c);
+	write(fd, &c, 1);
 }
-#include <stdio.h>
 
 int	main(void)
 {
-	printf("%c\n", ft_toupper('d'));
-	printf("%c\n", ft_toupper('E'));
+	ft_putchar_fd('A', 1);
 }

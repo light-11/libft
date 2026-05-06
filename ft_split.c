@@ -6,13 +6,13 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 19:59:32 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/05 16:11:18 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/06 16:53:22 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	count_word(char const *s, char c)
+static int	count_word(char const *s, char c)
 {
 	int	i;
 	int	count;
@@ -31,7 +31,7 @@ int	count_word(char const *s, char c)
 	return (count);
 }
 
-void	word_insert(char const *s, char c, char **s_words)
+static void	word_insert(char const *s, char c, char **s_words)
 {
 	int	i;
 	int	j;
@@ -58,7 +58,7 @@ void	word_insert(char const *s, char c, char **s_words)
 	}
 }
 
-void	free_words(char **words, int k)
+static void	free_words(char **words, int k)
 {
 	while (k > 0)
 	{
@@ -68,7 +68,7 @@ void	free_words(char **words, int k)
 	free(words);
 }
 
-char	**word_malloc(char const *s, char c, char **s_words)
+static char	**word_malloc(char const *s, char c, char **s_words)
 {
 	int	i;
 	int	j;

@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 10:43:50 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 16:55:06 by ayanaga          ###   ########.fr       */
+/*   Created: 2026/05/06 13:18:33 by ayanaga           #+#    #+#             */
+/*   Updated: 2026/05/06 13:26:35 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include <unistd.h>
+
+void	ft_putendl_fd(char *s, int fd)
 {
-	if ('a' <= c && c <= 'z')
-		return (c - 32);
-	else
-		return (c);
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
+	write(fd, "\n", 1);
 }
-#include <stdio.h>
 
 int	main(void)
 {
-	printf("%c\n", ft_toupper('d'));
-	printf("%c\n", ft_toupper('E'));
+	ft_putendl_fd("ABCDE", 1);
+	ft_putendl_fd("ABCDE", 1);
 }
