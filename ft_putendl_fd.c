@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 13:18:33 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 13:26:35 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:49:46 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 }
 
-int	main(void)
-{
-	ft_putendl_fd("ABCDE", 1);
-	ft_putendl_fd("ABCDE", 1);
-}
+//int	main(void)
+//{
+//	ft_putendl_fd("ABCDE", 1);
+//	ft_putendl_fd("ABCDE", 1);
+//}

@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 15:52:50 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/23 15:54:04 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:48:57 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	printf("%d\n", ft_isprint('c'));
-	printf("%d\n", ft_isprint('D'));
-	printf("%d\n", ft_isprint('1'));
-	printf("%d\n", ft_isprint(10));
-}
+//int	main(void)
+//{
+//	printf("%d\n", ft_isprint('c'));
+//	printf("%d\n", ft_isprint('D'));
+//	printf("%d\n", ft_isprint('1'));
+//	printf("%d\n", ft_isprint(10));
+//}

@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 13:03:18 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 13:07:54 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:49:39 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
-int	main(void)
-{
-	ft_putchar_fd('A', 1);
-}
+//int	main(void)
+//{
+//	ft_putchar_fd('A', 1);
+//}

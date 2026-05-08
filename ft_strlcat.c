@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 10:03:17 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/24 10:42:34 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:51:13 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[i + k] = '\0';
 	return (i + j);
 }
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char		str1[11] = "aiueo";
-	const char	str2[6] = "aiuko";
+//int	main(void)
+//{
+//	char		str1[11] = "aiueo";
+//	const char	str2[6] = "aiuko";
 
-	printf("%zu\n", ft_strlcat(str1, str2, 11));
-}
+//	printf("%zu\n", ft_strlcat(str1, str2, 11));
+//}

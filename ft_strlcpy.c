@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 20:12:02 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/24 08:56:25 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:51:19 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		j++;
 	return (j);
 }
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char		str1[6] = "aiueo";
-	const char	str2[6] = "aiuko";
+//int	main(void)
+//{
+//	char		str1[6] = "aiueo";
+//	const char	str2[6] = "aiuko";
 
-	printf("%zu\n", ft_strlcpy(str1, str2, 4));
-}
+//	printf("%zu\n", ft_strlcpy(str1, str2, 4));
+//}

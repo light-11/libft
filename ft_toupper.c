@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 10:43:50 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 16:55:06 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:52:05 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	printf("%c\n", ft_toupper('d'));
-	printf("%c\n", ft_toupper('E'));
-}
+//int	main(void)
+//{
+//	printf("%c\n", ft_toupper('d'));
+//	printf("%c\n", ft_toupper('E'));
+//}

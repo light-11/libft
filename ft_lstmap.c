@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
+/*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/08 09:05:40 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/08 09:06:38 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 18:03:07 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new_list;
-	t_list *new_node;
-	void *new_content;
+	t_list	*new_list;
+	t_list	*new_node;
+	void	*new_content;
 
 	if (lst == NULL || f == NULL || del == NULL)
 		return (NULL);

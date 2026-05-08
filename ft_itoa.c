@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 16:14:58 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 16:52:22 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:49:02 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,21 +54,21 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	int	n1;
-	int	n2;
-	int	n3;
-	int	n4;
+//int	main(void)
+//{
+//	int	n1;
+//	int	n2;
+//	int	n3;
+//	int	n4;
 
-	n1 = 12345678;
-	n2 = -12345678;
-	n3 = 0;
-	n4 = -2147483648;
-	printf("%s\n", ft_itoa(n1));
-	printf("%s\n", ft_itoa(n2));
-	printf("%s\n", ft_itoa(n3));
-	printf("%s\n", ft_itoa(n4));
-}
+//	n1 = 12345678;
+//	n2 = -12345678;
+//	n3 = 0;
+//	n4 = -2147483648;
+//	printf("%s\n", ft_itoa(n1));
+//	printf("%s\n", ft_itoa(n2));
+//	printf("%s\n", ft_itoa(n3));
+//	printf("%s\n", ft_itoa(n4));
+//}

@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 16:13:15 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/23 16:17:22 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:47:18 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,15 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	mozi[10] = "hello";
+//int	main(void)
+//{
+//	char	mozi[10] = "hello";
 
-	ft_bzero(mozi, 3);
-	printf("%s\n", mozi);
-	printf("%c\n", mozi[2]);
-	printf("%c\n", mozi[3]);
-	printf("%c\n", mozi[4]);
-}
+//	ft_bzero(mozi, 3);
+//	printf("%s\n", mozi);
+//	printf("%c\n", mozi[2]);
+//	printf("%c\n", mozi[3]);
+//	printf("%c\n", mozi[4]);
+//}

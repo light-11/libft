@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 17:13:49 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/23 18:52:17 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:54:53 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*char_dest;
+	char		*char_dest;
 	const char	*char_src;
-	size_t	i;
+	size_t		i;
 
 	char_src = (const char *)src;
 	char_dest = (char *)dest;
@@ -41,15 +41,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	mozi_1[6] = "hello";
-	char	mozi_2[6] = "hello";
+// int	main(void)
+//{
+//	char	mozi_1[6] = "hello";
+//	char	mozi_2[6] = "hello";
 
-	ft_memmove(mozi_1, mozi_1 + 2, 3);
-	printf("%s\n", mozi_1);
-	ft_memmove(mozi_2 + 2, mozi_2, 3);
-	printf("%s\n", mozi_2);
-}
+//	ft_memmove(mozi_1, mozi_1 + 2, 3);
+//	printf("%s\n", mozi_1);
+//	ft_memmove(mozi_2 + 2, mozi_2, 3);
+//	printf("%s\n", mozi_2);
+//}

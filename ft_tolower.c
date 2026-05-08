@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 10:49:43 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/24 10:49:51 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:51:57 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ int	ft_tolower(int c)
 		return (c);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	printf("%c\n", ft_tolower('D'));
-	printf("%c\n", ft_tolower('e'));
-}
+//int	main(void)
+//{
+//	printf("%c\n", ft_tolower('D'));
+//	printf("%c\n", ft_tolower('e'));
+//}

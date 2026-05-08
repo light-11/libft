@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 19:47:14 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 16:53:56 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:51:28 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,23 +42,23 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (new_s);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-char	test_func(unsigned int i, char c)
-{
-	if (i % 2 == 0 && c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
-}
+//char	test_func(unsigned int i, char c)
+//{
+//	if (i % 2 == 0 && c >= 'a' && c <= 'z')
+//		return (c - 32);
+//	return (c);
+//}
 
-int	main(void)
-{
-	char	*result;
+//int	main(void)
+//{
+//	char	*result;
 
-	result = ft_strmapi("abcdef", test_func);
-	if (!result)
-		return (1);
-	printf("%s\n", result);
-	free(result);
-	return (0);
-}
+//	result = ft_strmapi("abcdef", test_func);
+//	if (!result)
+//		return (1);
+//	printf("%s\n", result);
+//	free(result);
+//	return (0);
+//}

@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 13:33:45 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/29 17:00:00 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:47:10 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ int	ft_atoi(const char *nptr)
 	return ((int)(num * minus));
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	str1[9] = "   43563";
-	char	str2[10] = "   -43563";
+//int	main(void)
+//{
+//	char	str1[9] = "   43563";
+//	char	str2[10] = "   -43563";
 
-	printf("%d\n", ft_atoi(str1));
-	printf("%d\n", ft_atoi(str2));
-}
+//	printf("%d\n", ft_atoi(str1));
+//	printf("%d\n", ft_atoi(str2));
+//}

@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 20:53:01 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/28 20:49:31 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 18:02:46 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,11 @@ char	*ft_strdup(const char *s)
 	return (copy);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	const char	str[6] = "aiueo";
+// int	main(void)
+//{
+//	const char	str[6] = "aiueo";
 
-	printf("%s\n", ft_strdup(str));
-}
+//	printf("%s\n", ft_strdup(str));
+//}

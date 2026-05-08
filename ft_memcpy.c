@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 16:17:57 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/23 18:49:05 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:54:39 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char	*char_dest;
+	char		*char_dest;
 	const char	*char_src;
-	size_t	i;
+	size_t		i;
 
 	char_src = (const char *)src;
 	char_dest = (char *)dest;
@@ -29,13 +29,13 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	dest[6] = "hello";
-	char	src[6] = "world";
+// int	main(void)
+//{
+//	char	dest[6] = "hello";
+//	char	src[6] = "world";
 
-	ft_memcpy(dest, src, 3);
-	printf("%s\n", dest);
-}
+//	ft_memcpy(dest, src, 3);
+//	printf("%s\n", dest);
+//}

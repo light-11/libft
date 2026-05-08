@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 15:50:00 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/23 15:51:23 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:48:45 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	printf("%d\n", ft_isascii('c'));
-	printf("%d\n", ft_isascii('D'));
-	printf("%d\n", ft_isascii('1'));
-}
+//int	main(void)
+//{
+//	printf("%d\n", ft_isascii('c'));
+//	printf("%d\n", ft_isascii('D'));
+//	printf("%d\n", ft_isascii('1'));
+//}

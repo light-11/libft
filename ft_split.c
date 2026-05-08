@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 19:59:32 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 16:53:22 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:50:04 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,18 +113,18 @@ char	**ft_split(char const *s, char c)
 	return (s_words);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	str[12] = "Hello World";
-	char	c;
-	char	**words;
+//int	main(void)
+//{
+//	char	str[12] = "Hello World";
+//	char	c;
+//	char	**words;
 
-	c = 'o';
-	words = ft_split(str, c);
-	printf("%s\n", words[0]);
-	printf("%s\n", words[1]);
-	printf("%s\n", words[2]);
-	free_words(words, 3);
-}
+//	c = 'o';
+//	words = ft_split(str, c);
+//	printf("%s\n", words[0]);
+//	printf("%s\n", words[1]);
+//	printf("%s\n", words[2]);
+//	free_words(words, 3);
+//}

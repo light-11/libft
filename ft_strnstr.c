@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 12:14:40 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/24 13:31:55 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:51:37 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,15 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (0);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	str1[6] = "hello";
-	char	str2[3] = "ll";
-	char	str3[1] = "\0";
+//int	main(void)
+//{
+//	char	str1[6] = "hello";
+//	char	str2[3] = "ll";
+//	char	str3[1] = "\0";
 
-	printf("%s\n", ft_strnstr(str1, str2, 4));
-	printf("%s\n", ft_strnstr(str1, str2, 3));
-	printf("%s\n", ft_strnstr(str1, str3, 3));
-}
+//	printf("%s\n", ft_strnstr(str1, str2, 4));
+//	printf("%s\n", ft_strnstr(str1, str2, 3));
+//	printf("%s\n", ft_strnstr(str1, str3, 3));
+//}

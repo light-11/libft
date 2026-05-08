@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 17:44:24 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/06 16:54:14 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:51:48 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (trim);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	str1[12] = "Hello World";
-	char	str2[5] = "Held";
+//int	main(void)
+//{
+//	char	str1[12] = "Hello World";
+//	char	str2[5] = "Held";
 
-	printf("%s\n", ft_strtrim(str1, str2));
-}
+//	printf("%s\n", ft_strtrim(str1, str2));
+//}

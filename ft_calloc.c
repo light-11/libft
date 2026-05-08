@@ -6,10 +6,11 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 19:59:44 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/28 20:37:54 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:31:05 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdint.h>
 #include <stdlib.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)

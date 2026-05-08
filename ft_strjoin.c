@@ -6,7 +6,7 @@
 /*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 20:21:12 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/29 17:42:50 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 17:51:06 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new_s[i] = '\0';
 	return (new_s);
 }
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	str1[6] = "Hello";
-	char	str2[6] = "World";
+//int	main(void)
+//{
+//	char	str1[6] = "Hello";
+//	char	str2[6] = "World";
 
-	printf("%s\n", ft_strjoin(str1, str2));
-}
+//	printf("%s\n", ft_strjoin(str1, str2));
+//}
