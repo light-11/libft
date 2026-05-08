@@ -1,37 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 11:52:39 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/08 09:49:56 by ayanaga          ###   ########.fr       */
+/*   Created: 2026/05/08 08:23:41 by ayanaga           #+#    #+#             */
+/*   Updated: 2026/05/08 09:32:13 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
+#include "libft.h"
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	while (i >= 0)
-	{
-		if ((unsigned char)s[i] == (unsigned char)c)
-			return ((char *)&s[i]);
-		i--;
-	}
-	return (0);
+	new->next = *lst;
+	*lst = new;
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	str[6] = "hello";
-
-// 	printf("%s\n", ft_strrchr(str, 'e'));
-// 	printf("%s\n", ft_strrchr(str, '\0'));
-// }

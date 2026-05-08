@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 11:52:39 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/08 09:49:56 by ayanaga          ###   ########.fr       */
+/*   Created: 2026/05/08 09:04:54 by ayanaga           #+#    #+#             */
+/*   Updated: 2026/05/08 09:04:59 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
+#include "libft.h"
+
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	while (i >= 0)
+	if (lst == NULL || f == NULL)
+		return ;
+	while (lst != NULL)
 	{
-		if ((unsigned char)s[i] == (unsigned char)c)
-			return ((char *)&s[i]);
-		i--;
+		f(lst->content);
+		lst = lst->next;
 	}
-	return (0);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	str[6] = "hello";
-
-// 	printf("%s\n", ft_strrchr(str, 'e'));
-// 	printf("%s\n", ft_strrchr(str, '\0'));
-// }

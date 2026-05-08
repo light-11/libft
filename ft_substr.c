@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
+/*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 15:19:38 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/29 15:52:30 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 09:43:55 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*new_s;
 	unsigned int	i;
-	int				j;
+	size_t			j;
 
 	i = 0;
 	j = 0;
@@ -34,11 +34,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (new_s);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	str[14] = "hello world!!";
+// int	main(void)
+// {
+// 	char	str[14] = "hello world!!";
 
-	printf("%s\n", ft_substr(str, 6, 5));
-}
+// 	printf("%s\n", ft_substr(str, 6, 5));
+// }

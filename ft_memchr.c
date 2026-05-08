@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
+/*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 18:56:27 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/23 19:53:29 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 09:50:17 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,18 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (char_s[i] == c)
+		if ((unsigned char)char_s[i] == (unsigned char)c)
 			return ((void *)&char_s[i]);
 		i++;
 	}
 	return (0);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	str[6] = "hello";
+// int	main(void)
+// {
+// 	char	str[6] = "hello";
 
-	printf("%s\n", (char *)ft_memchr(str, 'e', 3));
-}
+// 	printf("%s\n", (char *)ft_memchr(str, 'e', 3));
+// }

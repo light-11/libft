@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayanaga <ayanaga@student.42tokyo.jp>       +#+  +:+       +#+        */
+/*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 19:54:13 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/04/23 20:09:20 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/08 09:52:47 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,18 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n)
 	{
 		if (char_s1[i] != char_s2[i])
-			return (char_s1[i] - char_s2[i]);
+			return ((unsigned char)char_s1[i] - (unsigned char)char_s2[i]);
 		i++;
 	}
 	return (0);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	str1[6] = "aiueo";
-	char	str2[6] = "aiuko";
+// int	main(void)
+// {
+// 	char	str1[6] = "aiueo";
+// 	char	str2[6] = "aiuko";
 
-	printf("%d\n", ft_memcmp(str1, str2, 4));
-}
+// 	printf("%d\n", ft_memcmp(str1, str2, 4));
+// }
