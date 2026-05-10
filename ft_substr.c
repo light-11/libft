@@ -6,26 +6,44 @@
 /*   By: ayanaga <ayanaga@student.42.ja>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 15:19:38 by ayanaga           #+#    #+#             */
-/*   Updated: 2026/05/08 09:43:55 by ayanaga          ###   ########.fr       */
+/*   Updated: 2026/05/10 21:35:05 by ayanaga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+static size_t	ft_strlen(const char *s)
 {
-	char			*new_s;
-	unsigned int	i;
-	size_t			j;
+	size_t	i;
 
 	i = 0;
-	j = 0;
-	while (s[i] != '\0')
+	while (s[i])
 		i++;
-	new_s = malloc(sizeof(char) * (len + 1));
+	return (i);
+}
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*new_s;
+	size_t	s_len;
+	size_t	j;
+
+	if (!s)
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+	{
+		new_s = malloc(1);
+		if (!new_s)
+			return (NULL);
+		new_s[0] = '\0';
+		return (new_s);
+	}
+	new_s = malloc(len + 1);
 	if (!new_s)
 		return (NULL);
-	while (j < len && s[start + j] != 0)
+	j = 0;
+	while (j < len && s[start + j])
 	{
 		new_s[j] = s[start + j];
 		j++;
